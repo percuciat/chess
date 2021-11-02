@@ -1,0 +1,13 @@
+{
+  "parser": "babel-eslint", // parser для избавления конфликта с babel
+  "rules": {
+    "no-unused-vars": "warn" // проверка на неиспользуемые переменные
+  },
+  "env": { // показываем линтеру расширение es6
+    "es6": true,
+    "browser": true
+  },
+  "extends": [
+    "eslint:recommended" // расширение линтера для обозначения ошибок галочкой
+  ]
+}
