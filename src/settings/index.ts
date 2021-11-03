@@ -25,7 +25,7 @@ type ICoordinates = {
     }
 }
 
-const coordinates: ICoordinates = {
+const STORE_COORDINATES_FIGURES: ICoordinates = {
     desk: {
         deskFields: []
     },
@@ -43,5 +43,5 @@ export default {
     $canvas,
     ctx,
     SCALE,
-    coordinates,
+    STORE_COORDINATES_FIGURES,
 }

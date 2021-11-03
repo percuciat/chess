@@ -1,7 +1,7 @@
 import settingsCanvas from '../settings';
 import Figures from './Figures';
 
-const { $canvas, SCALE, ctx, coordinates } = settingsCanvas;
+const { $canvas, SCALE, ctx, STORE_COORDINATES_FIGURES } = settingsCanvas;
 const F = new Figures();
 
 export default class Desk {
@@ -23,7 +23,7 @@ export default class Desk {
             if (i < 65) {
                 ctx.fillStyle = isWhite ? 'rgb(220, 220, 220)' : 'rgb(110, 110, 110)';
                 ctx.fillRect(x, y, SCALE, SCALE);
-                coordinates.desk.deskFields.push({x, y});
+                STORE_COORDINATES_FIGURES.desk.deskFields.push({x, y});
                 isWhite = !isWhite;
                 if (i % 8 === 0) {
                     x = $canvas.width / SCALE_WIDTH;
